@@ -50,7 +50,7 @@ function App() {
               <img src="/images/Socials_02.svg" alt="Facebook" className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
             </a>
             <a 
-              href="mailto:Robert%20Schwartzkopf%20%3Cbaschwartzkopf%40sbcglobal.net%3E"
+              href="mailto:Bob@TheStDenis.com"
               className="hover:opacity-70 transition-opacity"
             >
               <img src="/images/Socials_03.svg" alt="Email" className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
@@ -223,10 +223,10 @@ function App() {
                 Email
               </h3>
               <a 
-                href="mailto:Robert%20Schwartzkopf%20%3Cbaschwartzkopf%40sbcglobal.net%3E"
+                href="mailto:Bob@TheStDenis.com"
                 className="text-sm md:text-base lg:text-lg text-st-denis-burgundy/70 hover:text-st-denis-teal transition-colors whitespace-nowrap"
               >
-                baschwartzkopf@sbcglobal.net
+                Bob@TheStDenis.com
               </a>
             </div>
           </div>

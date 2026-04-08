@@ -207,7 +207,7 @@ st-denis-website/
 
 ## Support
 
-For questions or issues, contact: baschwartzkopf@sbcglobal.net
+For questions or issues, contact: Bob@TheStDenis.com
 
 ## License
 
