@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@source "../index.html";
+@source "./**/*.{tsx,ts,jsx,js}";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+@theme {
+  --color-st-denis-burgundy: #2B1621;
+  --color-st-denis-cream: #F5F1E8;
+  --color-st-denis-teal: #5CB9AD;
+  --color-st-denis-gold: #D4A574;
+  
+  --font-family-serif: 'Playfair Display', Georgia, serif;
+  --font-family-sans: 'Lato', sans-serif;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 17px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  
+  body {
+    @apply bg-st-denis-cream text-st-denis-burgundy font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .marbled-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .marbled-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+  }
+}
