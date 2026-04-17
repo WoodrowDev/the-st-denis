@@ -1,0 +1,63 @@
+{
+  "targetUrl": "https://thestdenis.com/hours",
+  "qrVersion": 6,
+  "errorCorrection": "H",
+  "outputs": [
+    {
+      "variant": "estate",
+      "label": "Estate",
+      "svg": "public/images/qr/the-st-denis-hours-qr-estate.svg",
+      "png": "public/images/qr/the-st-denis-hours-qr-estate.png",
+      "validation": [
+        {
+          "size": 1400,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 900,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 600,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 360,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "variant": "cellar",
+      "label": "Cellar",
+      "svg": "public/images/qr/the-st-denis-hours-qr-cellar.svg",
+      "png": "public/images/qr/the-st-denis-hours-qr-cellar.png",
+      "validation": [
+        {
+          "size": 1400,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 900,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 600,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 360,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        }
+      ]
+    }
+  ]
+}
