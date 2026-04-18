@@ -1,16 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap');
 @import "tailwindcss";
 
 @source "../index.html";
 @source "./**/*.{tsx,ts,jsx,js}";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
-
 @theme {
   --color-st-denis-burgundy: #2B1621;
+  --color-st-denis-burgundy-light: #3d2233;
   --color-st-denis-cream: #F5F1E8;
   --color-st-denis-teal: #5CB9AD;
   --color-st-denis-gold: #D4A574;
-  
+
   --font-family-serif: 'Playfair Display', Georgia, serif;
   --font-family-sans: 'Lato', sans-serif;
 }
@@ -18,6 +18,7 @@
 @layer base {
   html {
     font-size: 16px;
+    scroll-behavior: smooth;
   }
   
   @media (min-width: 768px) {
@@ -46,7 +47,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .marbled-bg::before {
     content: '';
     position: absolute;
@@ -55,5 +56,16 @@
     background-size: cover;
     background-position: center;
     pointer-events: none;
+  }
+
+  .drop-cap::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    float: left;
+    font-size: 3.5em;
+    line-height: 0.8;
+    padding-right: 0.1em;
+    padding-top: 0.05em;
+    color: #2B1621;
+    font-weight: 700;
   }
 }

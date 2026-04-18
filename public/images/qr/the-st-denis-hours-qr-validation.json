@@ -58,6 +58,62 @@
           "ok": true
         }
       ]
+    },
+    {
+      "variant": "manor",
+      "label": "Manor",
+      "svg": "public/images/qr/the-st-denis-hours-qr-manor.svg",
+      "png": "public/images/qr/the-st-denis-hours-qr-manor.png",
+      "validation": [
+        {
+          "size": 1400,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 900,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 600,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 360,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "variant": "portrait",
+      "label": "Portrait",
+      "svg": "public/images/qr/the-st-denis-hours-qr-portrait.svg",
+      "png": "public/images/qr/the-st-denis-hours-qr-portrait.png",
+      "validation": [
+        {
+          "size": 1400,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 900,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 600,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        },
+        {
+          "size": 360,
+          "decoded": "https://thestdenis.com/hours",
+          "ok": true
+        }
+      ]
     }
   ]
 }
