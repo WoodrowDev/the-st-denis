@@ -95,13 +95,19 @@
 /* ── FILTER BAR ── */
 .wg-filter-bar {
   position: sticky;
-  top: 64px;
+  /* Track the global fixed nav: h-16 (4rem) on mobile, h-20 (5rem) on md+.
+     Using rem makes this scale with html font-size at md/lg breakpoints. */
+  top: 4rem;
   z-index: 30;
   background: rgba(245,239,230,0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--wg-line-light);
   padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .wg-filter-bar { top: 5rem; }
 }
 
 .wg-filter-inner {
