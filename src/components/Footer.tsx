@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom';
+import { brand } from '../data/brand';
+
 export function Footer() {
   return (
-    <footer className="py-16 md:py-20 px-6 md:px-8 bg-st-denis-burgundy relative overflow-hidden">
-      {/* Subtle marbled texture overlay */}
+    <footer className="relative bg-st-denis-burgundy text-st-denis-cream overflow-hidden">
+      {/* subtle teal-to-burgundy wash */}
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
+        aria-hidden
+        className="absolute inset-0 opacity-[0.08] pointer-events-none"
         style={{
           backgroundImage: 'url(/images/Multicolor_SVG.svg)',
           backgroundSize: 'cover',
@@ -11,101 +15,85 @@ export function Footer() {
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto">
-        {/* Logo */}
-        <div className="flex justify-center mb-12">
-          <img
-            src="/images/St__Denis_Final_No_Line_08.svg"
-            alt="St. Denis"
-            className="w-28 h-28 md:w-36 md:h-36 object-contain"
-          />
-        </div>
-
-        {/* Contact grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center mb-12">
-          <div>
-            <h3 className="font-sans font-bold text-sm tracking-[0.2em] uppercase text-st-denis-gold mb-3">
-              Address
-            </h3>
-            <p className="text-st-denis-cream/70 font-sans text-sm">
-              426 Washington Street
-            </p>
-            <p className="text-st-denis-cream/70 font-sans text-sm">
-              Columbus, Indiana
+      <div className="relative z-10 px-6 md:px-10 pt-20 md:pt-24 pb-10">
+        <div className="max-w-7xl mx-auto">
+          {/* Top: wordmark + tagline */}
+          <div className="flex flex-col items-center text-center mb-16">
+            <img
+              src="/images/St__Denis_Final_No_Line_08.svg"
+              alt="St. Denis oval seal"
+              className="w-24 h-24 md:w-28 md:h-28 mb-6"
+            />
+            <p className="font-serif italic text-st-denis-cream/80 text-lg md:text-xl">
+              {brand.tagline}
             </p>
           </div>
 
-          <div>
-            <h3 className="font-sans font-bold text-sm tracking-[0.2em] uppercase text-st-denis-gold mb-3">
-              Phone
-            </h3>
-            <a
-              href="tel:+18123716114"
-              className="text-st-denis-cream/70 hover:text-st-denis-cream transition-colors font-sans text-sm"
-            >
-              (812) 371-6114
-            </a>
+          {/* 4-column footer */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pb-12 border-b border-st-denis-cream/15">
+            <FooterCol heading="Visit">
+              <Link to="/visit" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">Hours & Address</Link>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(brand.address.full)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors"
+              >
+                Directions
+              </a>
+              <p className="font-sans text-st-denis-cream/60 text-sm pt-1">
+                {brand.address.street}<br />
+                {brand.address.city}, {brand.address.stateAbbr}
+              </p>
+            </FooterCol>
+
+            <FooterCol heading="Discover">
+              <Link to="/wine-guide" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">The Wine Guide</Link>
+              <Link to="/about" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">About</Link>
+              <Link to="/events" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">Events</Link>
+            </FooterCol>
+
+            <FooterCol heading="Contact">
+              <a href={`tel:${brand.contact.phone}`} className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">
+                {brand.contact.phoneDisplay}
+              </a>
+              <a href={`mailto:${brand.contact.email}`} className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">
+                {brand.contact.email}
+              </a>
+            </FooterCol>
+
+            <FooterCol heading="Follow">
+              <a href={brand.social.instagram} target="_blank" rel="noopener noreferrer" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">
+                Instagram {brand.social.instagramHandle}
+              </a>
+              <a href={brand.social.facebook} target="_blank" rel="noopener noreferrer" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">
+                Facebook
+              </a>
+            </FooterCol>
           </div>
 
-          <div>
-            <h3 className="font-sans font-bold text-sm tracking-[0.2em] uppercase text-st-denis-gold mb-3">
-              Email
-            </h3>
-            <a
-              href="mailto:Bob@TheStDenis.com"
-              className="text-st-denis-cream/70 hover:text-st-denis-cream transition-colors font-sans text-sm"
-            >
-              Bob@TheStDenis.com
-            </a>
+          {/* Bottom row */}
+          <div className="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p className="font-sans uppercase tracking-[0.3em] text-[0.7rem] text-st-denis-cream/50">
+              ✦ {brand.subtitle} ✦
+            </p>
+            <p className="font-sans text-xs text-st-denis-cream/40">
+              © {new Date().getFullYear()} St. Denis. All rights reserved.
+            </p>
           </div>
-        </div>
-
-        {/* Social icons */}
-        <div className="flex justify-center gap-5 mb-10">
-          <a
-            href="https://www.instagram.com/thestdenis/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-70 transition-opacity"
-          >
-            <img
-              src="/images/Socials_01.svg"
-              alt="Instagram"
-              className="w-7 h-7 invert"
-            />
-          </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-70 transition-opacity"
-          >
-            <img
-              src="/images/Socials_02.svg"
-              alt="Facebook"
-              className="w-7 h-7 invert"
-            />
-          </a>
-          <a
-            href="mailto:Bob@TheStDenis.com"
-            className="hover:opacity-70 transition-opacity"
-          >
-            <img
-              src="/images/Socials_03.svg"
-              alt="Email"
-              className="w-7 h-7 invert"
-            />
-          </a>
-        </div>
-
-        {/* Copyright */}
-        <div className="text-center border-t border-st-denis-cream/10 pt-8">
-          <p className="text-st-denis-cream/30 font-sans text-xs tracking-wide">
-            &copy; {new Date().getFullYear()} St. Denis: Wine, Books, and
-            Wonders. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterCol({ heading, children }: { heading: string; children: React.ReactNode }) {
+  return (
+    <div className="flex flex-col gap-2.5">
+      <h3 className="font-sans uppercase tracking-[0.28em] text-[0.7rem] text-st-denis-gold mb-2">
+        {heading}
+      </h3>
+      {children}
+    </div>
   );
 }

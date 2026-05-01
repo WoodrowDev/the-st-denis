@@ -4,9 +4,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useScrollPosition } from '../hooks/useScrollPosition';
 
 const navItems = [
-  { label: 'About Us', to: '/about' },
-  { label: 'Hours', to: '/hours' },
+  { label: 'About', to: '/about' },
   { label: 'Events', to: '/events' },
+  { label: 'Visit', to: '/visit' },
   { label: 'The Wine Guide', to: '/wine-guide' },
 ];
 
@@ -28,10 +28,9 @@ export function Navigation() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          pastHero
-            ? 'bg-st-denis-burgundy/95 backdrop-blur-md shadow-lg'
-            : 'bg-transparent'
+          pastHero ? 'backdrop-blur-md shadow-lg' : ''
         }`}
+        style={{ backgroundColor: pastHero ? 'rgba(43, 22, 33, 0.95)' : 'transparent' }}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex-shrink-0">

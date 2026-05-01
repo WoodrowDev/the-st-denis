@@ -40,3 +40,11 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code workspace state (per-machine; not for sharing)
+.claude
+
+# Source photo originals — kept outside the repo. The optimized variants
+# under public/img/ ARE checked in; the script regenerates them locally
+# when the source dir is present.
+photos-from-rachel

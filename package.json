@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/build-images.mjs",
     "build": "tsc -b && vite build",
+    "build:images": "node scripts/build-images.mjs",
     "generate:hours-qr": "node scripts/generate-hours-qr.cjs",
     "lint": "eslint .",
     "preview": "vite preview"
