@@ -109,7 +109,10 @@ export function AboutPage() {
         caption="The navy wall, the shelves, the small things on them — Sarah's eye, throughout."
       >
         <p>
-          After decades shaping homes in Indianapolis as an interior designer, Sarah turned her attention to a single room — and that room became St. Denis. She chose the navy walls. The brass lamps. The cognac banquettes. The painting nestled into the bookshelves. The book that sits next to the bottle next to the candle.
+          For decades, as principal of <strong className="font-semibold">Rowland Design</strong>, Sarah helped set the standard for interior design in Indianapolis — building, along the way, the largest design library in the Midwest and a body of work that runs from boardrooms and owners' suites to private homes most of us never see. Now she has turned that whole inheritance onto a single room.
+        </p>
+        <p>
+          She chose the navy walls. The brass lamps. The cognac banquettes. The painting nestled into the bookshelves. The book that sits next to the bottle next to the candle.
         </p>
         <p>
           What people are responding to — the warmth, the strangeness, the <em>feeling</em> — is Sarah's signature. The kind of room you don't want to leave.
