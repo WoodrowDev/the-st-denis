@@ -115,9 +115,6 @@ export function AboutPage() {
           A body of work that runs from boardrooms and owners' suites to private homes most of us never see. Now she has turned that whole inheritance onto a single room.
         </p>
         <p>
-          What people are responding to — the warmth, the strangeness, the <em>feeling</em> — is Sarah's signature. The kind of room you don't want to leave.
-        </p>
-        <p>
           The room rearranges itself slowly over time, like a sentence she's still writing. The lamp you're reading under, the chair you're curled up in, the painting catching your eye — almost everything is for sale.
         </p>
       </EditorialSplit>
