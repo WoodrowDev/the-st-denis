@@ -94,25 +94,28 @@ export function AboutPage() {
 
       <FullBleedQuote
         photoId="interior-painting-shelf"
-        quote={<>A toast to <em>creativity, connection,</em> <br />and community.</>}
-        cite="— Bob &amp; Sarah, Founders"
+        quote={<>What people walk in and feel <br /><em>— that's design.</em></>}
+        cite="A note from St. Denis"
       />
 
-      {/* Sarah — the room is her self-portrait */}
+      {/* Sarah — the soul of the room */}
       <EditorialSplit
         photoId="interior-blue-wall"
         imageSide="left"
         index="II."
-        label="Co-Founder"
-        kicker="The room is her composition."
+        label="Designer · Co-Founder"
+        kicker="The way it feels — that's Sarah."
         title="Sarah Schwartzkopf."
         caption="The navy wall, the shelves, the small things on them — Sarah's eye, throughout."
       >
         <p>
-          After decades shaping homes in Indianapolis as an interior designer, Sarah turned her attention to one space — and what a space it became. The blue walls, the brass lamps, the cognac banquettes, the bookshelves rearranged like little exhibitions: every corner of St. Denis carries her signature.
+          After decades shaping homes in Indianapolis as an interior designer, Sarah turned her attention to a single room — and that room became St. Denis. She chose the navy walls. The brass lamps. The cognac banquettes. The painting nestled into the bookshelves. The book that sits next to the bottle next to the candle.
         </p>
         <p>
-          If you're wondering whether that lamp, that chair, that painting is for sale — the answer is almost always yes. The room rearranges itself slowly over time.
+          What people are responding to — the warmth, the strangeness, the <em>feeling</em> — is Sarah's signature. The kind of room you don't want to leave.
+        </p>
+        <p>
+          And almost everything in it is for sale. The room rearranges itself slowly over time, like a sentence she's still writing.
         </p>
       </EditorialSplit>
 
@@ -121,13 +124,13 @@ export function AboutPage() {
         photoId="founder-bob"
         imageSide="right"
         index="III."
-        label="Co-Founder"
-        kicker="An architect's love of the long story."
+        label="Co-Founder · Architect"
+        kicker="The structure underneath the feeling."
         title="Bob Schwartzkopf."
         tone="burgundy"
       >
         <p>
-          Bob spent his career in architecture — drawing rooms that hold conversation, light that flatters company, doors that invite people in. St. Denis is the building he's been sketching all along.
+          Bob spent his career in architecture — drawing rooms that hold conversation, light that flatters company, doors that invite people in. He helps Sarah's compositions stand up.
         </p>
         <p>
           He's the one who'll talk you into the second bottle, then hand you a first-edition paperback to take home with it.
