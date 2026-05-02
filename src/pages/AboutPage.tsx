@@ -118,7 +118,7 @@ export function AboutPage() {
           What people are responding to — the warmth, the strangeness, the <em>feeling</em> — is Sarah's signature. The kind of room you don't want to leave.
         </p>
         <p>
-          And almost everything in it is for sale — the lamp you're reading under, the chair you're curled up in, the painting catching your eye. The room rearranges itself slowly over time, like a sentence she's still writing.
+          The room rearranges itself slowly over time, like a sentence she's still writing. The lamp you're reading under, the chair you're curled up in, the painting catching your eye — almost everything is for sale.
         </p>
       </EditorialSplit>
 
