@@ -3,12 +3,50 @@ import { Link, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useScrollPosition } from '../hooks/useScrollPosition';
 
-const navItems = [
+type NavItem = {
+  label: string;
+  to: string;
+  external?: boolean;
+};
+
+const navItems: NavItem[] = [
   { label: 'About', to: '/about' },
   { label: 'Events', to: '/events' },
   { label: 'Visit', to: '/visit' },
-  { label: 'The Wine Guide', to: '/wine-guide' },
+  { label: 'The Wine Guide', to: 'https://st-denis-wine-library.vercel.app', external: true },
 ];
+
+function NavLink({
+  item,
+  className,
+  isActive,
+}: {
+  item: NavItem;
+  className: string;
+  isActive: boolean;
+}) {
+  if (item.external) {
+    return (
+      <a
+        href={item.to}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+      >
+        {item.label}
+      </a>
+    );
+  }
+  return (
+    <Link
+      to={item.to}
+      className={className}
+      aria-current={isActive ? 'page' : undefined}
+    >
+      {item.label}
+    </Link>
+  );
+}
 
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -42,19 +80,21 @@ export function Navigation() {
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                className={`font-sans text-sm tracking-[0.2em] uppercase transition-colors duration-300 ${
-                  location.pathname === item.to
-                    ? 'text-st-denis-gold'
-                    : 'text-st-denis-cream/80 hover:text-st-denis-cream'
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = !item.external && location.pathname === item.to;
+              return (
+                <NavLink
+                  key={item.label}
+                  item={item}
+                  isActive={isActive}
+                  className={`font-sans text-sm tracking-[0.2em] uppercase transition-colors duration-300 ${
+                    isActive
+                      ? 'text-st-denis-gold'
+                      : 'text-st-denis-cream/80 hover:text-st-denis-cream'
+                  }`}
+                />
+              );
+            })}
           </div>
 
           <button
@@ -88,17 +128,16 @@ export function Navigation() {
             <nav className="relative z-10 flex flex-col items-center gap-8">
               {navItems.map((item, i) => (
                 <motion.div
-                  key={item.to}
+                  key={item.label}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
                 >
-                  <Link
-                    to={item.to}
+                  <NavLink
+                    item={item}
+                    isActive={false}
                     className="text-st-denis-cream font-serif text-3xl tracking-wide hover:text-st-denis-gold transition-colors"
-                  >
-                    {item.label}
-                  </Link>
+                  />
                 </motion.div>
               ))}
               <div className="mt-8 pt-8 border-t border-st-denis-cream/20">

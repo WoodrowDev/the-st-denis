@@ -48,7 +48,14 @@ export function Footer() {
             </FooterCol>
 
             <FooterCol heading="Discover">
-              <Link to="/wine-guide" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">The Wine Guide</Link>
+              <a
+                href="https://st-denis-wine-library.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors"
+              >
+                The Wine Guide ↗
+              </a>
               <Link to="/about" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">About</Link>
               <Link to="/events" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">Events</Link>
             </FooterCol>

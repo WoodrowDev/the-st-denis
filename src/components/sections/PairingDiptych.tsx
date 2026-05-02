@@ -50,7 +50,13 @@ export function PairingDiptych({ pairing, numerals = ['I.', 'II.'] }: Props) {
                 transition={{ duration: 0.9, ease: 'easeOut', delay: i * 0.15 }}
               >
                 <Wrap
-                  {...(slug ? { href: `/wine-guide/${slug}` } : {})}
+                  {...(slug
+                    ? {
+                        href: `https://st-denis-wine-library.vercel.app/#${slug}`,
+                        target: '_blank',
+                        rel: 'noopener noreferrer',
+                      }
+                    : {})}
                   className="group block relative"
                 >
                   <div className="relative overflow-hidden bg-st-denis-burgundy/5">

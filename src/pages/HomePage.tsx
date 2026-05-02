@@ -78,12 +78,14 @@ export function HomePage() {
             transition={{ duration: 0.9, delay: 0.4 }}
             className="mt-12 flex flex-wrap items-center justify-center gap-5"
           >
-            <Link
-              to="/wine-guide"
+            <a
+              href="https://st-denis-wine-library.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-st-denis-burgundy text-st-denis-cream px-9 py-4 font-sans uppercase tracking-[0.25em] text-[0.7rem] hover:bg-st-denis-burgundy-light transition-colors"
             >
               Read the Wine Guide
-            </Link>
+            </a>
             <Link
               to="/visit"
               className="inline-flex items-center gap-2 font-sans uppercase tracking-[0.25em] text-[0.7rem] text-st-denis-burgundy border-b border-st-denis-burgundy/30 pb-1 hover:text-st-denis-teal hover:border-st-denis-teal transition-colors"
@@ -129,7 +131,12 @@ export function HomePage() {
                   viewport={{ once: true, margin: '-40px' }}
                   transition={{ duration: 0.8, delay: i * 0.1 }}
                 >
-                  <Link to={`/wine-guide/${w.id}`} className="group block">
+                  <a
+                    href={`https://st-denis-wine-library.vercel.app/#${w.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block"
+                  >
                     <div className="relative aspect-[3/4] overflow-hidden bg-st-denis-burgundy-light">
                       {photoId ? (
                         <Picture
@@ -152,20 +159,22 @@ export function HomePage() {
                         “{w.keyword}”
                       </p>
                     )}
-                  </Link>
+                  </a>
                 </motion.div>
               );
             })}
           </div>
 
           <div className="mt-14 flex justify-center">
-            <Link
-              to="/wine-guide"
+            <a
+              href="https://st-denis-wine-library.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 font-sans uppercase tracking-[0.3em] text-[0.7rem] text-st-denis-cream/80 border-b border-st-denis-cream/30 pb-1 hover:text-st-denis-gold hover:border-st-denis-gold transition-colors"
             >
-              All 26 wines in The Guide
-              <span aria-hidden>→</span>
-            </Link>
+              Read The Wine Guide
+              <span aria-hidden>↗</span>
+            </a>
           </div>
         </div>
       </section>

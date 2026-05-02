@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/wine-guide",
+      "destination": "https://st-denis-wine-library.vercel.app",
+      "permanent": false
+    },
+    {
+      "source": "/wine-guide/:slug",
+      "destination": "https://st-denis-wine-library.vercel.app/#:slug",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
