@@ -106,19 +106,19 @@ export function AboutPage() {
         label="Designer · Co-Founder"
         kicker="The way it feels — that's Sarah."
         title="Sarah Schwartzkopf."
-        caption="The navy wall, the shelves, the small things on them — Sarah's eye, throughout."
+        caption="Every detail — Sarah's eye, throughout."
       >
         <p>
-          For decades, as principal of <strong className="font-semibold">Rowland Design</strong>, Sarah helped set the standard for interior design in Indianapolis — building, along the way, the largest design library in the Midwest and a body of work that runs from boardrooms and owners' suites to private homes most of us never see. Now she has turned that whole inheritance onto a single room.
+          After decades of shaping interior design in Indianapolis, Sarah has turned her attention to one space.
         </p>
         <p>
-          She chose the navy walls. The brass lamps. The cognac banquettes. The painting nestled into the bookshelves. The book that sits next to the bottle next to the candle.
+          A body of work that runs from boardrooms and owners' suites to private homes most of us never see. Now she has turned that whole inheritance onto a single room.
         </p>
         <p>
           What people are responding to — the warmth, the strangeness, the <em>feeling</em> — is Sarah's signature. The kind of room you don't want to leave.
         </p>
         <p>
-          And almost everything in it is for sale. The room rearranges itself slowly over time, like a sentence she's still writing.
+          And almost everything in it is for sale — the lamp you're reading under, the chair you're curled up in, the painting catching your eye. The room rearranges itself slowly over time, like a sentence she's still writing.
         </p>
       </EditorialSplit>
 
