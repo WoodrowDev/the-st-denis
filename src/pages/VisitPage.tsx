@@ -49,7 +49,7 @@ export function VisitPage() {
             Find us at <em className="text-st-denis-gold">426</em>.
           </h1>
           <p className="font-serif italic text-st-denis-cream/85 text-lg md:text-2xl mt-6 max-w-2xl">
-            Look for the etched seal on the doors. Push them open. Stay awhile.
+            Look for the etched seal on the doors. Pull them open. Stay awhile.
           </p>
         </motion.div>
       </section>
