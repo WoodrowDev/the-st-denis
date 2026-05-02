@@ -134,30 +134,6 @@ export function AboutPage() {
         </p>
       </EditorialSplit>
 
-      {/* Josh */}
-      <section className="bg-st-denis-cream px-6 md:px-10 py-20 md:py-28">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9 }}
-            className="border-l-4 border-st-denis-teal pl-6 md:pl-10 py-2"
-          >
-            <SectionLabel index="IV.">The Sommelier</SectionLabel>
-            <h2 className="font-serif text-3xl md:text-4xl text-st-denis-burgundy mt-6 mb-5 leading-tight">
-              Curated by <em className="text-st-denis-teal">Josh Rattliff.</em>
-            </h2>
-            <p className="font-sans text-[1.05rem] text-st-denis-burgundy/85 leading-relaxed">
-              We're incredibly lucky to be joined in this venture by Josh, a certified sommelier and all-around fantastic guy. His passion and knowledge elevate every bottle we serve and every experience we create.
-            </p>
-            <p className="font-sans text-st-denis-burgundy/75 leading-relaxed mt-4">
-              Read his curation in <a href="/wine-guide" className="text-st-denis-burgundy border-b border-st-denis-burgundy/30 hover:text-st-denis-teal hover:border-st-denis-teal transition-colors">The Wine Guide</a>.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Closing letter */}
       <section className="bg-st-denis-burgundy text-st-denis-cream px-6 md:px-10 py-24 md:py-32">
         <div className="max-w-2xl mx-auto text-center">

@@ -25,7 +25,7 @@ export const brand = {
     instagramHandle: '@thestdenis',
     facebook: 'https://www.facebook.com/thestdenis',
   },
-  hoursSummary: 'Wed–Thu 4–10 · Fri–Sat 2–11 · Sun 12–6 · Closed Mon–Tue',
+  hoursSummary: 'Tue–Sun 2–10 · Closed Mondays',
   founders: ['Bob', 'Sarah'],
   sommelier: 'Josh Rattliff',
   priceRange: '$$',

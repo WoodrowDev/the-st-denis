@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -17,8 +17,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/visit" element={<VisitPage />} />
-          {/* 301 equivalent — keep printed QR codes alive */}
-          <Route path="/hours" element={<Navigate to="/visit" replace />} />
+          {/* /hours is an alias of /visit so existing links + printed QR codes still work. */}
+          <Route path="/hours" element={<VisitPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/wine-guide" element={<WineGuidePage />} />
           <Route path="/wine-guide/:slug" element={<WineDetailPage />} />

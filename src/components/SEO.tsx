@@ -103,9 +103,12 @@ export function SEO({
           longitude: brand.address.lng,
         },
         openingHoursSpecification: [
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Wednesday', 'Thursday'], opens: '16:00', closes: '22:00' },
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Friday', 'Saturday'], opens: '14:00', closes: '23:00' },
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '12:00', closes: '18:00' },
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+            opens: '14:00',
+            closes: '22:00',
+          },
         ],
         sameAs: [brand.social.instagram, brand.social.facebook],
       });

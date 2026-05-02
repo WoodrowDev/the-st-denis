@@ -41,8 +41,8 @@ export function WineGuidePage() {
             understand the collection at St. Denis.
           </p>
           <p className="wg-hero-guidance">
-            Curated by Josh Rattliff, certified sommelier. Each wine is chosen
-            for character, story, and soul.
+            Each wine is chosen for character, story, and soul — with curation
+            help from sommelier Josh Rattliff.
           </p>
         </div>
       </section>

@@ -113,7 +113,7 @@ export function HomePage() {
               </h2>
             </div>
             <p className="font-serif italic text-st-denis-cream/65 text-base md:text-lg max-w-md">
-              A rotating quartet from Josh, our certified sommelier — pulled from the cellar for tonight's pouring.
+              A rotating quartet — pulled from the cellar for tonight's pouring.
             </p>
           </motion.div>
 

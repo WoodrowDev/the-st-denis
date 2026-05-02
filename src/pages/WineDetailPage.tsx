@@ -248,7 +248,7 @@ export function WineDetailPage() {
               “{wine.whyWeChoseIt}”
             </p>
             <p className="mt-8 font-sans uppercase tracking-[0.3em] text-[0.7rem] text-st-denis-gold">
-              — {brand.sommelier}, sommelier
+              — St. Denis
             </p>
           </div>
         </section>
