@@ -70,11 +70,34 @@ export function Footer() {
             </FooterCol>
 
             <FooterCol heading="Follow">
-              <a href={brand.social.instagram} target="_blank" rel="noopener noreferrer" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">
-                Instagram {brand.social.instagramHandle}
+              <a
+                href={brand.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2.5 font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors"
+              >
+                <img
+                  src="/images/Socials_01.svg"
+                  alt=""
+                  aria-hidden
+                  className="w-4 h-4 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                />
+                {brand.social.instagramHandle}
               </a>
-              <a href={brand.social.facebook} target="_blank" rel="noopener noreferrer" className="font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors">
-                Facebook
+              <a
+                href={brand.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="group inline-flex items-center gap-2.5 font-sans text-sm text-st-denis-cream/75 hover:text-st-denis-gold transition-colors"
+              >
+                <img
+                  src="/images/Socials_02.svg"
+                  alt=""
+                  aria-hidden
+                  className="w-4 h-4 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                />
+                <span className="sr-only">Facebook</span>
               </a>
             </FooterCol>
           </div>

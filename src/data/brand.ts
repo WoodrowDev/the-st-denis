@@ -22,7 +22,7 @@ export const brand = {
   },
   social: {
     instagram: 'https://www.instagram.com/thestdenis/',
-    instagramHandle: '@thestdenis',
+    instagramHandle: '@TheStDenis',
     facebook: 'https://www.facebook.com/thestdenis',
   },
   hoursSummary: 'Tue–Sun 2–10 · Closed Mondays',
