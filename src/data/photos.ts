@@ -85,9 +85,9 @@ export const photos = {
   },
 
   /* Founders & staff */
-  'founder-sarah': {
+  'staff-sandy': {
     source: '913fc20d53469c1ee8e18382405d0880-xxlarge.jpg',
-    alt: 'Sarah, a brunette woman in a black v-neck, smiling behind the bar with stemware suspended above her.',
+    alt: 'Sandy, smiling behind the bar with stemware suspended overhead.',
     ratio: [3, 4],
     focal: 'center 30%',
     orientation: 'portrait',

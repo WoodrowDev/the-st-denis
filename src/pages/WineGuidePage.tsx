@@ -42,7 +42,7 @@ export function WineGuidePage() {
           </p>
           <p className="wg-hero-guidance">
             Each wine is chosen for character, story, and soul — with curation
-            help from sommelier Josh Rattliff.
+            help from sommelier Josh Ratliff.
           </p>
         </div>
       </section>

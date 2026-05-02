@@ -18,7 +18,7 @@ export function AboutPage() {
     <>
       <SEO
         title="About"
-        description={`Meet Bob & Sarah, the couple behind ${brand.fullName}, and Josh Rattliff, our certified sommelier.`}
+        description={`Meet Bob and Sarah Schwartzkopf, the couple behind ${brand.fullName}.`}
         path="/about"
       />
 
@@ -98,21 +98,21 @@ export function AboutPage() {
         cite="— Bob &amp; Sarah, Founders"
       />
 
-      {/* Sarah */}
+      {/* Sarah — the room is her self-portrait */}
       <EditorialSplit
-        photoId="founder-sarah"
+        photoId="interior-blue-wall"
         imageSide="left"
         index="II."
         label="Co-Founder"
-        kicker="An interior designer's eye for the room."
-        title="Sarah."
-        caption="Sarah behind the bar — where the room composes itself."
+        kicker="The room is her composition."
+        title="Sarah Schwartzkopf."
+        caption="The navy wall, the shelves, the small things on them — Sarah's eye, throughout."
       >
         <p>
-          After decades shaping homes in Indianapolis, Sarah turned her attention to one space — and what a space it became. The blue walls, the brass lamps, the cognac banquettes, the bookshelves rearranged like exhibitions: every corner of St. Denis carries her signature.
+          After decades shaping homes in Indianapolis as an interior designer, Sarah turned her attention to one space — and what a space it became. The blue walls, the brass lamps, the cognac banquettes, the bookshelves rearranged like little exhibitions: every corner of St. Denis carries her signature.
         </p>
         <p>
-          Most nights you'll find her behind the bar, pouring something she's excited about and asking what you've been reading.
+          If you're wondering whether that lamp, that chair, that painting is for sale — the answer is almost always yes. The room rearranges itself slowly over time.
         </p>
       </EditorialSplit>
 
@@ -123,7 +123,7 @@ export function AboutPage() {
         index="III."
         label="Co-Founder"
         kicker="An architect's love of the long story."
-        title="Bob."
+        title="Bob Schwartzkopf."
         tone="burgundy"
       >
         <p>

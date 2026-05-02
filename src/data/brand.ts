@@ -27,7 +27,8 @@ export const brand = {
   },
   hoursSummary: 'Tue–Sun 2–10 · Closed Mondays',
   founders: ['Bob', 'Sarah'],
-  sommelier: 'Josh Rattliff',
+  foundersLastName: 'Schwartzkopf',
+  sommelier: 'Josh Ratliff',
   priceRange: '$$',
 } as const;
 
